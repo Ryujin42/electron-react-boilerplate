@@ -2,3 +2,12 @@ body {
   background-color: #222222;
   color: white;
 }
+
+li {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+}
+

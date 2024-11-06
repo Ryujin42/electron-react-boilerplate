@@ -14,7 +14,6 @@ const HomeSection: React.FC<HomeSectionProps> = ({ homeData, setCurrentVideoId }
           <li
             key={video.id.videoId}
             onClick={() => setCurrentVideoId(video.id.videoId)}
-            style={{ cursor: 'pointer', padding: '10px', borderBottom: '1px solid #ccc', display: 'flex', flexDirection: 'row' }}
           >
           <img
               src={video.snippet.thumbnails.default.url}

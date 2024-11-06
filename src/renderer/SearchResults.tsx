@@ -14,7 +14,6 @@ const SearchResults: React.FC<SearchResultsProps> = ({ results, setCurrentVideoI
           <li
             key={result.id.videoId}
             onClick={() => setCurrentVideoId(result.id.videoId)}
-            style={{ cursor: 'pointer', padding: '10px', borderBottom: '1px solid #ccc', display: 'flex', flexDirection: 'row' }}
           >
             <img
               src={result.snippet.thumbnails.default.url}
