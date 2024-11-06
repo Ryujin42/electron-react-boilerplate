@@ -14,10 +14,17 @@ const SearchResults: React.FC<SearchResultsProps> = ({ results, setCurrentVideoI
           <li
             key={result.id.videoId}
             onClick={() => setCurrentVideoId(result.id.videoId)}
-            style={{ cursor: 'pointer', padding: '10px', borderBottom: '1px solid #ccc' }}
+            style={{ cursor: 'pointer', padding: '10px', borderBottom: '1px solid #ccc', display: 'flex', flexDirection: 'row' }}
           >
-            <h3>{result.snippet.title}</h3>
-            <p>{result.snippet.description}</p>
+            <img
+              src={result.snippet.thumbnails.default.url}
+              alt={result.snippet.title}
+              style={{ marginRight: '15px', width: '120px', height: '90px' }}
+            />
+            <div>
+              <h3>{result.snippet.title}</h3>
+              <p>{result.snippet.description}</p>
+            </div>
           </li>
         ))}
       </ul>
