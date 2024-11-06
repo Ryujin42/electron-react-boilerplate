@@ -8,8 +8,6 @@ import SearchResults from './SearchResults';
 import VideoPlayer from './VideoPlayer';
 
 function Main() {
-  const API_KEY = "AIzaSyCbjwb6-OEMIhTuzWoQj5uv1WMkC8dnets";
-
   const [searchQuery, setSearchQuery] = useState('');
   const [results, setResults] = useState([]);
   const [homeData, setHomeData] = useState([]);
