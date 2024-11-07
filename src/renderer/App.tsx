@@ -2,10 +2,10 @@ import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
-import Header from './Header';
-import HomeSection from './HomeSection';
-import SearchResults from './SearchResults';
-import VideoPlayer from './VideoPlayer';
+import Header from '../components/Header';
+import HomeSection from '../components/HomeSection';
+import SearchResults from '../components/SearchResults';
+import VideoPlayer from '../components/VideoPlayer';
 
 import auth from '../auth.json';
 
