@@ -7,11 +7,15 @@ import HomeSection from './HomeSection';
 import SearchResults from './SearchResults';
 import VideoPlayer from './VideoPlayer';
 
+import auth from '../auth.json';
+
 function Main() {
   const [searchQuery, setSearchQuery] = useState('');
   const [results, setResults] = useState([]);
   const [homeData, setHomeData] = useState([]);
   const [currentVideoId, setCurrentVideoId] = useState<string | null>(null);
+
+  const API_KEY = auth.API_KEY;
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
